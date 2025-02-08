@@ -1,0 +1,276 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body and Background Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background: #E6E6FA; /* Lavender background */
+    background-image: radial-gradient(circle, rgba(230, 230, 250, 0.6), rgba(200, 200, 255, 0.6)),
+                      url('https://img.freepik.com/free-vector/happy-birthday-colorful-balloons-celebration-background_1017-23650.jpg'); /* Subtle pattern */
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the pattern fixed when scrolling */
+    overflow: auto;
+}
+
+/* Main container */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    animation: slideInUp 1s ease-out;
+    position: relative;
+    z-index: 10;
+    margin-top: 20px; /* Ensure some space at the top */
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 3rem;
+    color: #6A5ACD; /* Dark lavender for text */
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Makes the header more visible */
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.subheading {
+    font-size: 1.4rem;
+    color: #8A2BE2; /* Lighter lavender shade */
+    font-style: italic;
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+/* Birthday Message */
+.birthday-message {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.birthday-message h2 {
+    font-size: 2rem;
+    color: #6A5ACD;
+    animation: fadeInLeft 1.5s ease-out;
+}
+
+.birthday-message p {
+    font-size: 1.1rem;
+    color: #666;
+    animation: fadeInLeft 2s ease-out;
+}
+
+/* Flirty and Fun Section */
+.flirty-fun {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-out 1s;
+}
+
+.flirty-fun h3 {
+    font-size: 1.8rem;
+    color: #8A2BE2;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.flirty-fun p {
+    font-size: 1.1rem;
+    color: #666;
+    animation: fadeInRight 2s ease-out;
+}
+
+/* Lazy Daydreamer Section */
+.lazy-daydreamer {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-out 2s;
+}
+
+.lazy-daydreamer h3 {
+    font-size: 1.8rem;
+    color: #8A2BE2;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.lazy-daydreamer p {
+    font-size: 1.1rem;
+    color: #666;
+    animation: fadeInRight 2s ease-out;
+}
+
+/* Bike Love Section */
+.bike-love {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-out 3s;
+}
+
+.bike-love h3 {
+    font-size: 1.8rem;
+    color: #8A2BE2;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.bike-love p {
+    font-size: 1.1rem;
+    color: #666;
+    animation: fadeInRight 2s ease-out;
+}
+
+.bike-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Teacher's Blessing Section */
+.teacher-blessing {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-out 2s;
+    margin-top: 30px;
+}
+
+.teacher-blessing h2 {
+    font-size: 2rem;
+    color: #6A5ACD;
+    font-weight: bold;
+    animation: fadeInLeft 1.5s ease-out;
+}
+
+.teacher-blessing p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 10px;
+    animation: fadeInLeft 2s ease-out;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #6A5ACD;
+    animation: fadeInUp 1.5s ease-out 1.5s;
+}
+
+.footer-text {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #6A5ACD;
+}
+
+/* Hover and button styling */
+button {
+    background-color: #8A2BE2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: fadeIn 2s ease-out 2s;
+}
+
+button:hover {
+    background-color: #7A1D99;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
